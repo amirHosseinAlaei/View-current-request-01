@@ -1,0 +1,174 @@
+@import url("./fonts.css");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+:root {
+  --color-text: #1e1e1e;
+  --color-btn-lable: #afcedd;
+  --color-breadcrumb-head: #234894;
+  --color-id: #696969;
+  --color-btn-primary: #219f95;
+
+  --color-btn-text: #ffffff;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: var(--color-secondary-100);
+}
+
+body,
+* {
+  font-family: Vazirmatn;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* breadcrumb */
+h1 {
+  color: var(--color-text);
+  font-size: 16px;
+  font-weight: bold;
+  @media (min-width: 768px) {
+    font-size: 24px;
+  }
+}
+
+.breadcrumb {
+  margin-top: 2rem;
+  padding: 4rem;
+}
+
+/* breadcrumb__items */
+
+.breadcrumb--items {
+  margin-top: 3rem;
+  padding: 1rem;
+  gap: 10rem;
+  row-gap: 3rem;
+  place-items: center;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (min-width: 768px) {
+  .breadcrumb--items {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* brach--style */
+
+.breadcrumb--style {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+/* ! branch hed */
+.breadcrumb__head {
+  display: flex;
+  justify-content: space-between;
+  color: var(--color-breadcrumb-head);
+}
+
+/* btn-lable-style */
+.btn__lable {
+  background-color: var(--color-btn-lable);
+  border-radius: 6px;
+  width: 40px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  height: 40px;
+  font-size: 18px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+/* brach date */
+
+.breadcrumb-date {
+  font-size: 14px;
+}
+
+/* ! brach bode */
+
+.breadcrumb__body {
+  align-items: center;
+
+  line-height: 2.7rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.4rem;
+}
+
+.breadcrumb__body span {
+  font-size: 18px;
+  font-weight: 900;
+  color: var(--color-text);
+}
+
+.breadcrumb-id {
+  color: var(--color-id);
+  font-size: 14px;
+}
+
+/* branch profile */
+
+.breadcrumb__useName {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.6rem;
+}
+.user_img img {
+  object-fit: cover;
+  height: 40px;
+  width: 40px;
+}
+.user_img {
+  height: 40px;
+  width: 40px;
+  overflow: hidden;
+  background-color: red;
+  border-radius: 8px;
+}
+
+.user__name {
+  font-size: 16px;
+  color: var(--color-text);
+  font-weight: 700;
+}
+
+.btn-style {
+  background-color: var(--color-btn-primary);
+  width: 140px;
+  height: 60px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.btn-style a {
+  color: var(--color-btn-text);
+}
+
+.btn-primary :hover {
+  background-color: #1abcaf;
+  transition-duration: 300ms;
+}
