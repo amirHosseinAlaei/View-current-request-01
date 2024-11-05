@@ -124,6 +124,7 @@ h1 {
 .breadcrumb__body span {
   font-size: 18px;
   font-weight: 900;
+  white-space: nowrap;
   color: var(--color-text);
 }
 
